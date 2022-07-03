@@ -1,7 +1,7 @@
 import { Box, Button, Drawer, Typography } from "@mui/material";
 
 import { useState } from "react";
-
+import SlotPicker from "./components/SlotPicker";
 // Assume data arrives like this
 
 // {
@@ -40,7 +40,7 @@ function App() {
           sx: { padding: 4 },
         }}
       >
-        <Typography fontWeight={500}>Slot picker should be here.</Typography>
+        <SlotPicker setIsModalOpen={setIsModalOpen} />
       </Drawer>
     </Box>
   );

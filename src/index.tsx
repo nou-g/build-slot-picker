@@ -7,12 +7,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { peepTheme } from "./theme";
 
+import CustomLuxonUtils from "./utils";
+
 ReactDOM.render(
   <React.StrictMode>
-    <LocalizationProvider dateAdapter={DateAdapter}>
+    <LocalizationProvider dateAdapter={CustomLuxonUtils}>
       <ThemeProvider theme={peepTheme}>
         <CssBaseline />
-
         <App />
       </ThemeProvider>
     </LocalizationProvider>

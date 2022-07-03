@@ -5,7 +5,7 @@ export const peepTheme = createTheme({
     MuiButton: {
       styleOverrides: {
         root: {
-          color: "red",
+          color: "rgb(63,78,206)",
         },
       },
     },
